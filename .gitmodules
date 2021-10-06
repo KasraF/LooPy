@@ -1,0 +1,11 @@
+[submodule "vscode"]
+	path = vscode
+	url = https://github.com/UCSD-PL/vscode
+	branch = loopy
+[submodule "server"]
+	path = server
+	url = https://github.com/KasraF/SnippySynthesizer
+	branch = loopy
+[submodule "monaco-editor"]
+	path = monaco-editor
+	url = https://github.com/KasraF/monaco-editor
