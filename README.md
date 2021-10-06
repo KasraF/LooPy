@@ -38,8 +38,8 @@ For building/running VS Code and the Projection Boxes, you need:
 2. [Yarn](https://yarnpkg.com/)
 3. [Python 3](https://www.python.org/downloads/)
 
-For building/running the synthesizer, you need:
-1. [Java 11/15](https://www.oracle.com/java/technologies/javase-downloads.html#JDK11)
+For building/running the server, you need:
+1. [Java 11+](https://www.oracle.com/java/technologies/javase-downloads.html#JDK11)
 2. [Maven](https://maven.apache.org/)
 3. [wget](https://www.gnu.org/software/wget/) (This is just the download tool used in the scripts. Feel free to replace it with your download tool of choice!)
 
@@ -79,7 +79,7 @@ If you would like to do this manually, you need to:
 	```
 6. Download [pyodide](https://pyodide.readthedocs.io/en/latest/):
    ```sh
-   cd ../../synthesizer/src/main/resources/static/;
+   cd ../../server/src/main/resources/static/;
    wget 'https://github.com/pyodide/pyodide/releases/download/0.18.1/pyodide-build-0.18.1.tar.bz2';
    ```
    And extract only the Pyodide files:
@@ -115,7 +115,7 @@ After running the `init.sh` script (or going through the steps manually), you ca
 > ```
 > And opening http://localhost:8080/ in your favorite browser. 
 
-You can run LooPy just by running the Jar file `synthesizer/target/snippy-server-0.1-SNAPSHOT.jar`. This will start up the server in port 8080.
+You can run LooPy just by running the Jar file `server/target/snippy-server-0.1-SNAPSHOT.jar`. This will start up the server in port 8080.
 
 To change the port on which the server runs, you can set the `SERVER_PORT` environment variable.`
 
